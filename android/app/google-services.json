@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "745751072",
+    "project_id": "helpchat-5f3dd",
+    "storage_bucket": "helpchat-5f3dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745751072:android:c50f525059a375416e3245",
+        "android_client_info": {
+          "package_name": "com.helpchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745751072-m24dkvtfti1f9alqcs0mfhkbo0imjuq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXuDlqCFiAV_jB8uhFgPyOJ-kFfw6vDJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745751072-m24dkvtfti1f9alqcs0mfhkbo0imjuq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

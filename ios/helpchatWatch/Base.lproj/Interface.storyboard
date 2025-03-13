@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--back-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="back" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="helpchatWatch" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.13538625839999999" green="0.1149241701" blue="0.53057944769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <segue destination="Evk-ww-Lrs" kind="relationship" relationship="nextPage" id="Fs4-II-OXJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.95061728395061" y="344.74619289340097"/>
+        </scene>
+        <!--loginScreen-->
+        <scene sceneID="5Ym-el-UUk">
+            <objects>
+                <controller identifier="loginScreen" spacing="4" id="Evk-ww-Lrs" customClass="LoginInterfaceController" customModule="helpchatWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="GUc-Qa-UJg">
+                            <items>
+                                <group width="1" height="35" alignment="center" contentMode="top" animationDuration="12" layout="vertical" radius="17" spacing="0.0" id="yuw-or-xOE">
+                                    <items>
+                                        <textField width="1" alignment="left" text="Benutzername" placeholder="username" id="G5C-1v-1DT" propertyAccessControl="none">
+                                            <accessibilityTraits key="accessibilityTraits" notEnabled="YES"/>
+                                            <color key="textColor" red="0.64435619119999998" green="0.61092096569999998" blue="0.79945033789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="textFieldAction:" destination="Evk-ww-Lrs" id="UBH-2c-l9b"/>
+                                            </connections>
+                                        </textField>
+                                    </items>
+                                    <color key="backgroundColor" red="0.49099040030000002" green="0.45070528980000002" blue="0.71813088660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" height="35" alignment="left" layout="vertical" radius="17" spacing="6" id="MDD-hm-BkD">
+                                    <items>
+                                        <textField width="1" alignment="left" verticalAlignment="bottom" text="Passwort" placeholder="password" textContentType="username" secureTextEntry="YES" id="TyW-I3-4gv">
+                                            <color key="textColor" red="0.64435619119999998" green="0.61092096569999998" blue="0.79945033789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="passwordFieldAction:" destination="Evk-ww-Lrs" id="Org-rc-ZqF"/>
+                                            </connections>
+                                        </textField>
+                                    </items>
+                                    <color key="backgroundColor" red="0.49099040030000002" green="0.45070528980000002" blue="0.71813088660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="5" top="10" bottom="16"/>
+                        </group>
+                        <button alignment="center" verticalAlignment="center" id="jQz-Gg-fbm">
+                            <group key="contentGroup" width="129" height="34" alignment="left" radius="18" id="lck-em-n82">
+                                <items>
+                                    <label width="142" height="52" alignment="left" text="Weiter" textAlignment="center" id="FZU-cJ-6EA">
+                                        <color key="textColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.1243837699" green="0.86716747279999995" blue="0.800011158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </group>
+                            <connections>
+                                <action selector="loginTabbed" destination="Evk-ww-Lrs" id="BNo-yX-EQd"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.13538625839999999" green="0.1149241701" blue="0.53057944769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="608.51282051282055" y="304.25641025641028"/>
+        </scene>
+        <!--screenHome-->
+        <scene sceneID="tbt-5O-dbO">
+            <objects>
+                <controller identifier="screenHome" contentMode="scaleAspectFit" id="BKe-98-Dtb" customClass="HomeInterfaceController" customModule="helpchatWatch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="26" alignment="center" text="-" textAlignment="right" id="byZ-Ds-zgo">
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <group width="1" alignment="left" layout="vertical" spacing="4" id="moB-AJ-VJq">
+                            <items>
+                                <group width="1" alignment="left" radius="17" id="wW6-w8-kBn">
+                                    <items>
+                                        <button width="1" alignment="left" title="Anfragen" id="wL0-KY-17K">
+                                            <color key="backgroundColor" red="0.42005646229999999" green="0.8728837371" blue="0.80325680970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="requestsButtonTapped" destination="BKe-98-Dtb" id="rQ1-8F-P4A"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" radius="17" id="b1d-Va-wkt">
+                                    <items>
+                                        <button width="1" alignment="left" title="Einsterllungen" id="VHG-QB-Mt8">
+                                            <color key="backgroundColor" red="0.39264452459999999" green="0.35486266020000001" blue="0.96890133619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="settingButtonTapped" destination="BKe-98-Dtb" id="J7G-sk-Uyu"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="8" right="8" top="20" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.13538625839999999" green="0.1149241701" blue="0.53057944769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="944" y="43"/>
+        </scene>
+        <!--screenListRequest-->
+        <scene sceneID="uh5-bM-3Td">
+            <objects>
+                <hostingController identifier="screenListRequest" id="eVw-vd-lDn" customClass="HostingController" customModule="helpchatWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="326"/>
+        </scene>
+        <!--screenRequestList-->
+        <scene sceneID="n55-a3-8kX">
+            <objects>
+                <controller identifier="screenRequestList" id="Qr2-VV-Urq" customClass="RequestListInterfaceController" customModule="helpchatWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="gfG-n9-Cbz">
+                            <items>
+                                <button alignment="left" id="mSc-NZ-a4X">
+                                    <group key="contentGroup" width="1" height="40" alignment="left" radius="20" id="6Kw-cB-Aqq">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="hc_home_menu_active" id="qpJ-1N-che"/>
+                                            <label width="85" height="42" alignment="left" text="Go back" textAlignment="center" id="w5u-Y5-sei">
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <edgeInsets key="margins" left="15" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="goBackTabbed" destination="Qr2-VV-Urq" id="IHb-mD-OWU"/>
+                                    </connections>
+                                </button>
+                                <table alignment="left" id="hun-kz-M5u">
+                                    <items>
+                                        <tableRow identifier="Row" id="Jqw-eE-Y3m" customClass="itemRequest" customModule="helpchatWatch" customModuleProvider="target">
+                                            <group key="rootItem" width="1" height="160" alignment="left" layout="overlap" radius="20" id="7T1-mD-b3Z">
+                                                <items>
+                                                    <group width="1" height="160" alignment="left" layout="vertical" radius="10" id="LXz-vL-cwl">
+                                                        <items>
+                                                            <group width="42" alignment="left" radius="20" spacing="0.0" id="XxP-sa-apU">
+                                                                <items>
+                                                                    <imageView alignment="left" id="rOP-jg-d84">
+                                                                        <color key="tintColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </imageView>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </group>
+                                                            <group width="1" alignment="left" layout="vertical" id="zZT-7d-Oxn">
+                                                                <items>
+                                                                    <label alignment="left" text="-" id="gwx-nu-eAG"/>
+                                                                    <label alignment="left" text="-" id="l0d-b9-58u"/>
+                                                                    <label alignment="right" text="-" minimumScaleFactor="0.0" id="3g0-Bv-JMf">
+                                                                        <fontDescription key="font" type="system" pointSize="8"/>
+                                                                    </label>
+                                                                </items>
+                                                            </group>
+                                                            <group alignment="center" verticalAlignment="center" semanticContentAttribute="playback" contentMode="scaleAspectFill" id="Pvp-lN-c8Q">
+                                                                <items>
+                                                                    <button width="50" alignment="left" title="Share" id="2qe-NG-WB9">
+                                                                        <color key="backgroundColor" red="0.39264452459999999" green="0.35486266020000001" blue="0.96890133619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                                        <connections>
+                                                                            <action selector="btnShare" destination="Jqw-eE-Y3m" id="sXG-5C-aGs"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button width="47" alignment="left" title="Done" id="13f-gE-YFm">
+                                                                        <color key="titleColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="backgroundColor" red="0.49099040030000002" green="0.45070528980000002" blue="0.71813088660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                                        <connections>
+                                                                            <action selector="btnDone" destination="Jqw-eE-Y3m" id="pF3-Ce-D07"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </items>
+                                                                <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                                                            </group>
+                                                        </items>
+                                                        <gestureRecognizers>
+                                                            <swipeGestureRecognizer direction="2" id="iv1-5y-Y6T">
+                                                                <connections>
+                                                                    <action selector="handelSwipeLeft:" destination="Jqw-eE-Y3m" id="Qco-Ee-Zsi"/>
+                                                                </connections>
+                                                            </swipeGestureRecognizer>
+                                                            <swipeGestureRecognizer id="DHf-bx-UWi" propertyAccessControl="none">
+                                                                <connections>
+                                                                    <action selector="handelSwipeRight:" destination="Jqw-eE-Y3m" id="XVI-yj-wsO"/>
+                                                                </connections>
+                                                            </swipeGestureRecognizer>
+                                                        </gestureRecognizers>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <edgeInsets key="margins" left="5" right="0.0" top="5" bottom="0.0"/>
+                                                    </group>
+                                                    <group width="1" height="160" alignment="left" hidden="YES" layout="vertical" radius="20" id="xQq-eB-QvB">
+                                                        <items>
+                                                            <group width="30" height="30" alignment="right" layout="vertical" radius="15" spacing="0.0" id="3Ps-R7-v4C">
+                                                                <items>
+                                                                    <imageView width="40" height="30" alignment="right" image="tik" contentMode="center" animationDuration="8" id="Trt-pf-y3o">
+                                                                        <color key="tintColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </imageView>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                            </group>
+                                                            <label width="75" height="66" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="2" id="5dD-ua-uhK"/>
+                                                            <button alignment="center" verticalAlignment="center" id="6U6-cN-r6I">
+                                                                <group key="contentGroup" width="90" height="37" alignment="left" radius="20" id="3Sv-da-Cdg">
+                                                                    <items>
+                                                                        <label width="117" height="41" alignment="left" text="Confirm" textAlignment="center" id="PvN-2F-qYP">
+                                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </label>
+                                                                    </items>
+                                                                    <color key="backgroundColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <edgeInsets key="margins" left="0.0" right="1" top="0.0" bottom="0.0"/>
+                                                                </group>
+                                                                <connections>
+                                                                    <action selector="confirmTabbed" destination="Jqw-eE-Y3m" id="dqW-Y2-eJj"/>
+                                                                </connections>
+                                                            </button>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <edgeInsets key="margins" left="0.0" right="6" top="7" bottom="0.0"/>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="backConfirm" destination="xQq-eB-QvB" id="R7c-MX-P93"/>
+                                                <outlet property="backRequest" destination="7T1-mD-b3Z" id="hKl-TV-cdq"/>
+                                                <outlet property="imgRequest" destination="rOP-jg-d84" id="x21-sF-NFJ"/>
+                                                <outlet property="imgStatus" destination="Trt-pf-y3o" id="NIg-6I-lYm"/>
+                                                <outlet property="labelMessage" destination="5dD-ua-uhK" id="7f0-Ma-c0D"/>
+                                                <outlet property="textLabelRequestServic" destination="gwx-nu-eAG" id="P4o-zE-JVT"/>
+                                                <outlet property="textLabelRequestTime" destination="3g0-Bv-JMf" id="dp3-JG-09w"/>
+                                                <outlet property="textLabelRequestTitle" destination="l0d-b9-58u" id="f6S-II-NVG"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.13538625839999999" green="0.1149241701" blue="0.53057944769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                    <connections>
+                        <outlet property="goBackButtom" destination="mSc-NZ-a4X" id="le5-p8-7HL"/>
+                        <outlet property="tabelRequest" destination="hun-kz-M5u" id="hKE-Yx-S5U"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1219" y="68"/>
+        </scene>
+        <!--screenSetting-->
+        <scene sceneID="erX-Bk-Rsf">
+            <objects>
+                <controller identifier="screenSetting" animationDuration="10" spacing="6" id="iun-Dg-Vta" customClass="SettingInterfaceController" customModule="helpchatWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="tQh-NQ-n1y">
+                            <items>
+                                <button alignment="left" semanticContentAttribute="playback" id="h2Q-Ne-gZM">
+                                    <group key="contentGroup" width="1" height="38" alignment="left" radius="19" id="DBw-tG-Kkh">
+                                        <items>
+                                            <imageView width="49" height="39" alignment="left" image="hc_home_menu_active" contentMode="center" id="iVb-1t-ulJ"/>
+                                            <label width="105" height="40" alignment="left" text="Go back" textAlignment="left" id="CST-bA-BrJ">
+                                                <color key="textColor" red="0.080910912939999996" green="0.096179264890000005" blue="0.22455877590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="gobackTabbed" destination="iun-Dg-Vta" id="vFr-eP-9Do"/>
+                                    </connections>
+                                </button>
+                                <table alignment="left" spacing="6" id="LoZ-ac-bHA">
+                                    <items>
+                                        <tableRow identifier="Row" id="xdz-Rx-lvj" customClass="ItemSetting" customModule="helpchatWatch" customModuleProvider="target">
+                                            <group key="rootItem" width="1" height="140" alignment="left" semanticContentAttribute="playback" contentMode="center" animationDuration="7" layout="vertical" radius="15" spacing="0.0" id="3SO-RK-u7f">
+                                                <items>
+                                                    <label width="136" height="63" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="iYS-V9-rri"/>
+                                                    <switch width="64" height="35" alignment="center" verticalAlignment="center" value="YES" numberOfLines="11" id="OoP-f1-tza">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </switch>
+                                                </items>
+                                                <color key="backgroundColor" red="0.37370747329999998" green="0.4048691988" blue="0.94531959300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <edgeInsets key="margins" left="1" right="0.0" top="20" bottom="20"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="labelSetting" destination="iYS-V9-rri" id="LpG-vZ-oxC"/>
+                                                <outlet property="switchsetting" destination="OoP-f1-tza" id="maL-c5-gdk"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                                <group width="1" height="140" alignment="center" verticalAlignment="center" radius="18" id="Tsh-34-oDh">
+                                    <items>
+                                        <button alignment="center" verticalAlignment="center" id="ek5-mM-TqD">
+                                            <group key="contentGroup" width="82" height="35" alignment="left" radius="17" id="R8J-7i-4pq">
+                                                <items>
+                                                    <label width="83" height="36" alignment="left" text="Abmelben" textAlignment="center" id="0Ex-Tz-Y5x">
+                                                        <color key="textColor" red="0.080910912939999996" green="0.096179264890000005" blue="0.22455877590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.99165600539999998" green="1" blue="0.99990648029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </group>
+                                            <connections>
+                                                <action selector="logoutTabbed" destination="iun-Dg-Vta" id="naM-3b-F1T"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" red="0.39264452459999999" green="0.35486266020000001" blue="0.96890133619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.13538625839999999" green="0.1149241701" blue="0.53057944769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <edgeInsets key="margins" left="8" right="9" top="9" bottom="16"/>
+                    <connections>
+                        <outlet property="settingTable" destination="LoZ-ac-bHA" id="Cfk-NM-XcY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1558.7692307692309" y="403.64102564102569"/>
+        </scene>
+        <!--screenLogout-->
+        <scene sceneID="2xv-me-Qvq">
+            <objects>
+                <controller identifier="screenLogout" contentMode="center" spacing="14" id="zXI-4t-92c" customClass="logoutInterfaceController" customModule="helpchatWatch_Extension">
+                    <items>
+                        <label width="136" height="57" alignment="center" text="Abmerlden   bestatigen." textAlignment="center" numberOfLines="2" id="WHJ-mI-PXG"/>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="SlQ-GR-Fe4">
+                            <items>
+                                <button alignment="center" id="lRI-tD-GYs">
+                                    <group key="contentGroup" width="136" height="39" alignment="left" radius="20" id="549-QZ-jCs">
+                                        <items>
+                                            <label width="135" height="40" alignment="left" text="Zurück." textAlignment="center" id="ri5-dH-acq"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.64435619119999998" green="0.61092096569999998" blue="0.79945033789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="goBackTabbed" destination="zXI-4t-92c" id="UgZ-le-1eQ"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" id="9jU-Wp-M21">
+                                    <group key="contentGroup" width="135" height="40" alignment="left" radius="20" id="Mlm-Uq-vkh">
+                                        <items>
+                                            <label width="136" height="41" alignment="left" text="Abmelden." textAlignment="center" id="0jq-9d-Ivm"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.36031062520000001" green="0.42830330059999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="logoutTabbed" destination="zXI-4t-92c" id="qjV-D4-No9"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.13538625839999999" green="0.1149241701" blue="0.53057944769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1798.5128205128206" y="335.20512820512823"/>
+        </scene>
+        <!--screenSuccesfulLogin-->
+        <scene sceneID="qWJ-7N-Fn0">
+            <objects>
+                <controller identifier="screenSuccesfulLogin" id="XJu-1B-SYN" customClass="succesfullLoginInterfaceController" customModule="helpchatWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="left" verticalAlignment="bottom" layout="vertical" radius="17" spacing="4" id="hvb-hb-pc2">
+                            <items>
+                                <label width="136" height="40" alignment="left" text="Anmeldung erfolgreich." numberOfLines="2" id="WZv-MH-9MH">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                                <group alignment="left" verticalAlignment="bottom" radius="17" id="djS-Nl-nOE">
+                                    <items>
+                                        <button width="1" alignment="left" title="Weiter" id="YPh-z0-6ij">
+                                            <color key="backgroundColor" red="0.42005646229999999" green="0.8728837371" blue="0.80325680970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="loginSuccesfullTabbed" destination="XJu-1B-SYN" id="ush-vW-w4O"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="8" right="8" top="0.0" bottom="8"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.13538625839999999" green="0.1149241701" blue="0.53057944769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="912" y="617"/>
+        </scene>
+        <!--screenUnSuccesfulLogin-->
+        <scene sceneID="FBM-MN-5EJ">
+            <objects>
+                <controller identifier="screenUnSuccesfulLogin" id="URe-gs-CQo" customClass="ErrorLoginInterfaceController" customModule="helpchatWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="176" alignment="left" layout="vertical" id="diW-sD-sgG">
+                            <items>
+                                <label width="136" height="100" alignment="left" text="Bitte Benutzername und Passwort überprüfen." textAlignment="left" numberOfLines="4" id="mOj-zD-xQs"/>
+                                <group width="1" alignment="left" verticalAlignment="bottom" radius="17" id="Zy1-k6-qe0">
+                                    <items>
+                                        <button width="1" alignment="left" title="Weiter" id="6w9-hw-kK8">
+                                            <color key="backgroundColor" red="0.42005646229999999" green="0.8728837371" blue="0.80325680970000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="8" right="8" top="0.0" bottom="30"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.13538625839999999" green="0.1149241701" blue="0.53057944769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1218.7692307692309" y="472.94871794871796"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="104" height="130"/>
+        <image name="hc_home_menu_active" width="23" height="23"/>
+        <image name="tik" width="13" height="9.5"/>
+    </resources>
+</document>

@@ -1,0 +1,39 @@
+
+/* Class = "WKInterfaceButton"; title = "Next"; ObjectID = "6w9-hw-kK8"; */
+"6w9-hw-kK8.title" = "Next";
+
+/* Class = "WKInterfaceLabel"; text = "Helpchat"; ObjectID = "F7Z-Wg-vbh"; */
+"F7Z-Wg-vbh.text" = "Helpchat";
+
+/* Class = "WKInterfaceTextField"; text = "username"; ObjectID = "G5C-1v-1DT"; */
+"G5C-1v-1DT.text" = "username";
+
+/* Class = "WKInterfaceTextField"; text = "password"; ObjectID = "TyW-I3-4gv"; */
+"TyW-I3-4gv.text" = "password";
+
+/* Class = "WKInterfaceButton"; title = "Setting"; ObjectID = "VHG-QB-Mt8"; */
+"VHG-QB-Mt8.title" = "Setting";
+
+/* Class = "WKInterfaceLabel"; text = "Login Succesful."; ObjectID = "WZv-MH-9MH"; */
+"WZv-MH-9MH.text" = "Login Succesful.";
+
+/* Class = "WKInterfaceButton"; title = "Next"; ObjectID = "YPh-z0-6ij"; */
+"YPh-z0-6ij.title" = "Next";
+
+/* Class = "WKInterfaceLabel"; text = "Welcome to "; ObjectID = "bGE-ur-zOt"; */
+"bGE-ur-zOt.text" = "Welcome to ";
+
+/* Class = "WKInterfaceLabel"; text = "Station  C   -   UMR"; ObjectID = "byZ-Ds-zgo"; */
+"byZ-Ds-zgo.text" = "Station  C   -   UMR";
+
+/* Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "iYS-V9-rri"; */
+"iYS-V9-rri.text" = "Label";
+
+/* Class = "WKInterfaceButton"; title = "Next"; ObjectID = "jQz-Gg-fbm"; */
+"jQz-Gg-fbm.title" = "Next";
+
+/* Class = "WKInterfaceLabel"; text = "Please check \nyour username \nand password! "; ObjectID = "mOj-zD-xQs"; */
+"mOj-zD-xQs.text" = "Please check \nyour username \nand password! ";
+
+/* Class = "WKInterfaceButton"; title = "Requests"; ObjectID = "wL0-KY-17K"; */
+"wL0-KY-17K.title" = "Requests";
